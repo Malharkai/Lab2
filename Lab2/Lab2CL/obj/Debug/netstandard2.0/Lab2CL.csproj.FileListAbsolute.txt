@@ -1,0 +1,9 @@
+C:\Users\Malte\source\repos\Lab2CL\bin\Debug\netstandard2.0\Lab2CL.deps.json
+C:\Users\Malte\source\repos\Lab2CL\bin\Debug\netstandard2.0\Lab2CL.dll
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.csprojAssemblyReference.cache
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.AssemblyInfoInputs.cache
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.AssemblyInfo.cs
+C:\Users\Malte\source\repos\Lab2CL\bin\Debug\netstandard2.0\Lab2CL.pdb
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.csproj.CoreCompileInputs.cache
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.dll
+C:\Users\Malte\source\repos\Lab2CL\obj\Debug\netstandard2.0\Lab2CL.pdb
