@@ -1,4 +1,4 @@
-﻿using Lab2CL;
+using Lab2CL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,8 @@ namespace Lab2Main
             List<float> areas = new List<float>();
             List<float> shape3Dv = new List<float>();
             float tCircums = 0;
-            
+            float totalArea = 0;
+
             for (int i = 0; i < 20; i++)
             {
                 shapes.Add(Shape.GenerateShape());   
@@ -35,19 +36,12 @@ namespace Lab2Main
                     shape3Dv.Add(aShape3D.Volume);
                 }
                 areas.Add(aShape.Area);
-
+                totalArea =+ aShape.Area;
                 Console.WriteLine(aShape);
                    
             }
 
-
-            float totalArea = 0;
-            foreach (float aShapeArea in areas)
-            {
-                totalArea =+ aShapeArea;
-            }
             float avarageArea = totalArea / shapes.Count();
-
             
             Console.WriteLine($"The average area is: {avarageArea:0.00}");
             Console.WriteLine($"Sum of the circumference of all triangles: {tCircums:0.00}");
