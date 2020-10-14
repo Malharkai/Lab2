@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -119,6 +119,10 @@ namespace Lab2CL
         {
             this.center = center;
             this.size = size;
+            if(size.X == size.Y)
+            {
+                _isSquare = true;
+            }
         }
 
         public Rectangle(Vector2 center, float width)
@@ -176,7 +180,7 @@ namespace Lab2CL
         
 
         public override float Circumference => (float)(a + b + c);
-        public override Vector3 Center => new Vector3((p1.X + p2.X + p3.X) / 3f, (p1.Y + p2.Y + p2.Y) / 3f, 0f);
+        public override Vector3 Center => new Vector3((p1.X + p2.X + p3.X) / 3f, (p1.Y + p2.Y + p3.Y) / 3f, 0f);
 
         public override float Area => (float)Math.Sqrt(s * (s - a) * (s - b) * (s - c));
 
@@ -195,11 +199,11 @@ namespace Lab2CL
             this.radius = radius;
         }
 
-        public override float Volume => (float)(4/3 * Math.PI * radius);
+        public override float Volume => (float)(4/3 * Math.PI * Math.Pow(radius,3));
 
         public override Vector3 Center => center;
 
-        public override float Area => (float)Math.Pow((4 * Math.PI * radius) , 2);
+        public override float Area => (float)(4 * Math.PI * Math.Pow(radius,2));
 
         public override string ToString()
         {            
@@ -226,6 +230,11 @@ namespace Lab2CL
             h = size.X;
             w = size.Y;
             l = size.Z;
+
+            if (h == w && h == l)
+            {
+                _isCube = true;
+            }
         }
 
         public Cuboid(Vector3 center, float width)
